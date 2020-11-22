@@ -1,0 +1,14 @@
+<div class="container">
+    <div *ngFor="let speaker of speakers; let i=index;" class="row">
+        <div class="col-12">
+            <div class="card mb-3">
+                <img [src]="images[i]" class="card-img-top" alt="{{speaker.firstName}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{speaker.firstName}} {{speaker.lastName}}</h5>
+                    <p class="card-text">{{speaker.bio}}</p>
+                    <p class="card-text"><small class="text-muted">{{speaker.title}}</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

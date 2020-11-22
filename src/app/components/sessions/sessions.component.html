@@ -1,0 +1,27 @@
+<div class="container">
+    <div *ngFor="let session of sessions;let i = index;" class="row">
+        <div class="col-8">
+            <div class="card-transparent special-card mb-3">
+                <img [src]="images[i]" class="card-img-top" alt="{{session.name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{session.name}}</h5>
+                    <p class="card-text">{{session.description}}</p>
+                    <p class="card-text"><small class="text-muted">{{session.type}}, {{session.length}} min</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div>
+                <div class="card-transparent special-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Speakers</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li *ngFor="let speaker of session.sessionSpeakers" class="list-group-item">
+                            {{speaker.firstName}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

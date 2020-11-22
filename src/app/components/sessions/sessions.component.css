@@ -1,0 +1,14 @@
+img{
+    height: 100px;
+    width: 50%;
+}
+
+.container{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.special-card{
+    background-color: rgba(245, 245, 245, 1);
+    opacity: .85;
+}

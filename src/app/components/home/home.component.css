@@ -1,0 +1,24 @@
+.presentation-title{
+    font-size: 6em;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+    background: #fbf8ec;
+    background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+    background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+h1{
+    color: #FFFFFF;
+    text-align: center;
+}
+.btn-outline-secondary {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.container{
+    height: 53.3em;
+}
